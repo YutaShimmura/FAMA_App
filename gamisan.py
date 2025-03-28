@@ -16,7 +16,7 @@ import httpx
 #     http_client=httpx.Client(headers={"Accept-Charset": "utf-8"})
 # )
 
-# --- APIキーの読み込み ---
+# --- APIキーの読み込み --- 修正版
 load_dotenv(".env")  # .env ファイルから環境変数を読み込む
 api_key = os.getenv("OPENAI_API_KEY")
 client = OpenAI(api_key=api_key)
